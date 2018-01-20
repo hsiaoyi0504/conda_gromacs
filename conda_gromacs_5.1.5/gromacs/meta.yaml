@@ -27,4 +27,4 @@ requirements:
 
 test:
   commands:
-    - mdrun -version
+    - gmx -version

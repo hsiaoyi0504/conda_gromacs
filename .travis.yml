@@ -27,4 +27,4 @@ install:
   - conda install --use-local gromacs
 
 script:
-  - mdrun -version
+  - gmx -version
