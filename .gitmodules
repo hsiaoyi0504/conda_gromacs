@@ -1,0 +1,3 @@
+[submodule "conda_gromacs_4.5.5"]
+	path = conda_gromacs_4.5.5
+	url = https://github.com/hsiaoyi0504/conda_gromacs_4.5.5
