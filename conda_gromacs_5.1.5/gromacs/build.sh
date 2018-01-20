@@ -8,5 +8,3 @@ cmake -DGMX_MPI=OFF \
 
 make
 make install
-
-cp $SRC_DIR/gromacs_5.1.5/build/bin/* $PREFIX/bin
