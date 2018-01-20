@@ -1,0 +1,30 @@
+about:
+  home: https://github.com/hsiaoyi0504/conda_gromacs
+  license: MIT License
+  summary: GROMACS (http://www.gromacs.org/) is a versatile package to perform molecular dynamics. I created this to make people more easy incorporate old gromacs into applications.
+
+package:
+  name: gromacs
+  version: 5.1.5
+
+build:
+  number: 0
+
+source:
+  fn: gromacs-5.1.5.tar.gz
+  url: ftp://ftp.gromacs.org/pub/gromacs/gromacs-5.1.5.tar.gz
+  md5: 831fe741bcd9f1612155dffc919885f2
+  folder: gromacs_5.1.5/
+
+requirements:
+  build:
+    - gcc_linux-64  # [linux]
+    - gxx_linux-64  # [linux]
+    - fftw  # [linux]
+    - cmake  # [linux]
+  run:
+    - libgcc  # [linux]
+
+test:
+  commands:
+    - mdrun -version
