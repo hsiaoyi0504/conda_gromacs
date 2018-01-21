@@ -2,6 +2,7 @@ mkdir $SRC_DIR/gromacs_5.1.5/build
 cd $SRC_DIR/gromacs_5.1.5/build
 
 cmake -DGMX_X11=OFF \
+      -DGMX_CXX11=OFF \
       -DGMX_MPI=OFF \
       -DGMX_BUILD_OWN_FFTW=ON \
       -DGMX_EXTERNAL_BOOST=OFF \
