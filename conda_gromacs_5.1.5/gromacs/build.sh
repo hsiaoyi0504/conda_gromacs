@@ -8,7 +8,9 @@ cmake -DGMX_X11=OFF \
       -DGMX_EXTERNAL_BOOST=OFF \
       -DCMAKE_C_COMPILER=${PREFIX}/bin/x86_64-conda_cos6-linux-gnu-gcc \
       -DCMAKE_CXX_COMPILER=${PREFIX}/bin/x86_64-conda_cos6-linux-gnu-g++ \
-      -DGMX_PREFER_STATIC_LIBS=OFF \
+      -DGMX_PREFER_STATIC_LIBS=ON \
+      -DGMX_GPU=OFF \
+      -DGMX_BUILD_SHARED_EXE=ON \
       -DCMAKE_INSTALL_PREFIX=$PREFIX ..
 
 make
